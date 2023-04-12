@@ -18,7 +18,7 @@ const loginSchema = Yup.object().shape({
 });
 
 function LogIn() {
-	
+	const navigate = useNavigate();
 	async function onSubmit(values, {setErrors}) {
 		
 		await loginSchema.validate(values);
@@ -34,7 +34,6 @@ function LogIn() {
 				password: 'Email or password incorrect'
 			});
 		}
-		
 	}
 	
 	return (

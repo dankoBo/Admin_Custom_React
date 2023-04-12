@@ -7,6 +7,7 @@ import Header from '../header/Header';
 
 
 function AllContent() { 
+    console.log('hello');
     return (
         <StyledAppContainer>
             <StyledAppLeftSide>
